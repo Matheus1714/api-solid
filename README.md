@@ -37,7 +37,7 @@ De forma descritiva, é necessário que:
 
 ## Tabela de Comandos Primas
 
-| Comando             | Descrição                                                           |
-| ------------------- | ------------------------------------------------------------------- |
-| npx prisma init     | Inicia um banco de dados prisma                                     |
-| npx prisma generate | Creia de forma automatizada a timagem dos schemas (`schema.prisma`) |
+| Comando               | Descrição                                                           |
+| --------------------- | ------------------------------------------------------------------- |
+| `npx prisma init`     | Inicia um banco de dados prisma                                     |
+| `npx prisma generate` | Creia de forma automatizada a timagem dos schemas (`schema.prisma`) |
