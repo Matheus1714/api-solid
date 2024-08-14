@@ -9,7 +9,7 @@
     "build": "tsup src --out-dir build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus Silva Martins Mota",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.3.0",
