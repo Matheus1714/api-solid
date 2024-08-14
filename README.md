@@ -34,3 +34,10 @@ De forma descritiva, é necessário que:
 - [ ] os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] todas as listas de dados precisam estar paginadas em 20 itens por página;
 - [ ] o usuário deve ser identificado or JWT (JSON Web Token);
+
+## Tabela de Comandos Primas
+
+| Comando             | Descrição                                                           |
+| ------------------- | ------------------------------------------------------------------- |
+| npx prisma init     | Inicia um banco de dados prisma                                     |
+| npx prisma generate | Creia de forma automatizada a timagem dos schemas (`schema.prisma`) |
