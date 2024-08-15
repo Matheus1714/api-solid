@@ -30,14 +30,24 @@ As restrições para a aplicação são que:
 
 De forma descritiva, é necessário que:
 
-- [ ] a senha do usuário precisa estar criptogradafa;
+- [ ] a senha do `usuário` precisa estar criptogradafa;
 - [ ] os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] todas as listas de dados precisam estar paginadas em 20 itens por página;
-- [ ] o usuário deve ser identificado or JWT (JSON Web Token);
+- [ ] o `usuário` deve ser identificado or JWT (JSON Web Token);
 
 ## Tabela de Comandos Primas
 
-| Comando               | Descrição                                                           |
-| --------------------- | ------------------------------------------------------------------- |
-| `npx prisma init`     | Inicia um banco de dados prisma                                     |
-| `npx prisma generate` | Creia de forma automatizada a timagem dos schemas (`schema.prisma`) |
+| Comando                  | Descrição                                                          |
+| ------------------------ | ------------------------------------------------------------------ |
+| `npx prisma init`        | Inicia um banco de dados prisma                                    |
+| `npx prisma generate`    | Cria de forma automatizada a timagem dos schemas (`schema.prisma`) |
+| `npx prisma migrate dev` | Realiza as migrations                                              |
+
+## Parttern
+
+- `SOLID`
+  - `S`:
+  - `O`:
+  - `L`:
+  - `I`:
+  - `D`: Dependency Inversion Principle
