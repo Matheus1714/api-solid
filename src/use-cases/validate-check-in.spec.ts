@@ -16,6 +16,7 @@ describe("Validate Check-in Use Case", () => {
   });
 
   it("should be able to validate the check-in", async () => {
+    vi.setSystemTime(new Date(2023, 0, 1, 13, 40));
     const createdCheckIn = await checkInsRepository.create({
       gym_id: "gym-01",
       user_id: "user-01",
