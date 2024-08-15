@@ -1,24 +1,22 @@
-import bcrypt from "bcryptjs";
-import { UserAlreadyExistError } from "./errors/user-already-exist-error";
 import { Gym } from "@prisma/client";
 import { GymsRepository } from "@/repositories/gym-repository";
 
-interface SearchGymUseCaseCaseRequest {
+interface SearchGymUseCaseRequest {
   query: string;
   page: number;
 }
 
-interface SearchGymUseCaseCaseResponse {
+interface SearchGymUseCaseResponse {
   gyms: Gym[];
 }
 
-export class SearchGymUseCaseCase {
+export class SearchGymUseCase {
   constructor(private gymRepository: GymsRepository) {}
 
   async execute({
     query,
     page,
-  }: SearchGymUseCaseCaseRequest): Promise<SearchGymUseCaseCaseResponse> {
+  }: SearchGymUseCaseRequest): Promise<SearchGymUseCaseResponse> {
     const gyms = await this.gymRepository.searchMany(query, page);
 
     return {
