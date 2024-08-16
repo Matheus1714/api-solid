@@ -1,5 +1,7 @@
 @base_url=http://localhost:3000
 
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmZTIyNWMzMC1kNWQ1LTQyZTQtYWM3Mi05ZmJmMGYyYzhlZDQiLCJpYXQiOjE3MjM3NzI0OTZ9.bG2ezA0wxPySv2adDhxjfJSmAz-qwta1cE0WB9luQc0
+
 ###
 
 # @name create-user
@@ -11,3 +13,21 @@ Content-Type: application/json
     "email": "matheus6@gmail.com",
     "password": "123456"
 }
+
+###
+
+# @name sessions-user
+POST {{base_url}}/sessions
+Content-Type: application/json
+
+{
+    "email": "matheus6@gmail.com",
+    "password": "123456"
+}
+
+###
+
+# @name get-me
+GET {{base_url}}/me
+Content-Type: application/json
+Authorization: Bearer {{token}}
